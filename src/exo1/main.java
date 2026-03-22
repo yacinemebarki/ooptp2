@@ -1,8 +1,6 @@
-
+package exo1;
 
 import java.util.*;
-
-
 
 
 public class main {
