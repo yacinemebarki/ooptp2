@@ -1,12 +1,11 @@
-package exo1;
+package firstexo;
 
 import java.util.Objects;
-
-public class etudiant {
+public class Etudiant {
     private int id;
     private String nom;
     private String prenom;
-    public etudiant(String nom,String prenom,int id){
+    public Etudiant(String nom,String prenom,int id){
         this.id=id;
         this.nom=nom;
         this.prenom=prenom;
@@ -36,8 +35,8 @@ public class etudiant {
     }
     @Override
     public boolean equals(Object Et){
-        if (!(Et instanceof etudiant)) return false;
-        etudiant e=(etudiant) Et;
+        if (!(Et instanceof Etudiant)) return false;
+        Etudiant e=(Etudiant) Et;
 
         return  id==e.id;
 

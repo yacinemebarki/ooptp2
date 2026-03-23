@@ -1,12 +1,12 @@
-package exo1;
+package firstexo;
 
 import java.util.*;
 
 
-public class main {
+public class Main1 {
     public static void main(String[] args) {
         
-        List<etudiant> etu=new ArrayList<>();
+        List<Etudiant> etu=new ArrayList<>();
         Scanner sc=new Scanner(System.in);
         System.out.println("enter number of etudiant");
         int n=sc.nextInt();
@@ -25,7 +25,7 @@ public class main {
             System.out.println("enter second name");
             sname=sc.nextLine();
             
-            etudiant etud=new etudiant(name, sname, id);
+            Etudiant etud=new Etudiant(name, sname, id);
             etu.add(etud);
 
         }
@@ -38,9 +38,9 @@ public class main {
         
         }
 
-        Set<etudiant> etuset=new HashSet<>(etu) ;
+        Set<Etudiant> etuset=new HashSet<>(etu) ;
 
-        for(etudiant e:etuset){
+        for(Etudiant e:etuset){
             System.out.println(e);
         }
 
@@ -48,7 +48,7 @@ public class main {
         System.out.println("set size "+etuset.size());
         System.out.println("list size "+etu.size());
 
-        etudiant e;
+        Etudiant e;
         for(int i=0;i<etu.size();i++){
             for(int j=i+1;j<etu.size();j++){
                 if(etu.get(i).getid()>etu.get(j).getid()){
@@ -78,7 +78,7 @@ public class main {
     
     }
 
-    public etudiant search(List<etudiant> etu,etudiant eleve){
+    public Etudiant search(List<Etudiant> etu,Etudiant eleve){
         int n=etu.size();
         for(int i=0;i<n;i++){
             if (etu.get(i).getid()==eleve.getid()){
