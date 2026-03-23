@@ -10,6 +10,9 @@
 
 
 ---
+# 📝 Note
+
+You can find the explanation of each exercise inside its corresponding folder in the `README.md` file.
 
 # 📁 Project Structure
 ```bash
